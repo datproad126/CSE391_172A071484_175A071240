@@ -1,0 +1,1 @@
+$('.tt-a').tooltip('enable');
