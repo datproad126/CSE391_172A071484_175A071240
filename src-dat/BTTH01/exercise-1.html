@@ -1,508 +1,346 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Homework</title>
-    <!-- Bootstrap CSS -->
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <!-- Bootstrap core CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.7/css/mdb.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/index.css">
+        <!-- Required meta tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Homework</title>
+        <!-- Bootstrap CSS -->
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+                rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.7/css/mdb.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/index.css">
+        <link rel="stylesheet" href="/css/execise-1.css">
 </head>
 
 <body>
-    <!--header-->
-    <header>
-        <div class="hd">
-            <h1 class="font-weight-bold">NỀN TẢNG VÀ PHÁT TRIỂN WEB</h1>
-            <hr class="hr-dark my-2" width="200">
-            <h3>LỚP CSE391</h3>
-            <h3>Giáo viên hướng dẫn: master Kiều Tuấn Dũng</h3>
-            <h3>Team design: PHUCDATBICH</h3>
+        <!--header-->
+        <header>
+                <div class="hd">
+                        <h1 class="font-weight-bold">NỀN TẢNG VÀ PHÁT TRIỂN WEB</h1>
+                        <hr class="hr-dark my-2" widtd="200">
+                        <h3>LỚP CSE391</h3>
+                        <h3>Giáo viên hướng dẫn: master Kiều Tuấn Dũng</h3>
+                        <h3>Team design: PHUCDATBICH</h3>
+                </div>
+        </header>
+        <!--tde navigation trong main duoc su dung tdong qua framework cua bootstrap-->
+        <main role="main">
+                <nav class=" navbar navbar-expand-lg navbar-dark blue-gradient">
+                        <div class="container font-weight-bold">
+                                <a class="navbar-brand" href="/"><i class="fas fa-home"></i> Trang chủ</a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                        data-target="#navbarSupportedContent-333"
+                                        aria-controls="navbarSupportedContent-333" aria-expanded="false"
+                                        aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+                                        <ul class="navbar-nav mr-auto">
+
+                                                <!--navigation active -->
+                                                <li class="nav-item active">
+                                                        <a href="/project/" class="nav-link">Project</a>
+                                                </li>
+                                                <!--navigation active -->
+                                                <!-- item dropdown -->
+                                                <li class="nav-item dropdown">
+                                                        <a class="nav-link dropdown-toggle"
+                                                                id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+                                                                aria-haspopup="true" aria-expanded="false">Bài tập của
+                                                                Đạt</a>
+                                                        <!-- dropdown menu  -->
+                                                        <div class="dropdown-menu dropdown-default"
+                                                                aria-labelledby="navbarDropdownMenuLink-333">
+                                                                <a class="dropdown-item"
+                                                                        href="/src-dat/BTtd01/exercise-1.html">Bài tập
+                                                                        01</a>
+
+                                                        </div>
+                                                        <!-- dropdown menu  -->
+                                                </li>
+                                                <!-- item dropdown -->
+
+                                                <!-- item dropdown -->
+                                                <li class="nav-item dropdown">
+                                                        <!-- a tag -->
+                                                        <a class="nav-link dropdown-toggle"
+                                                                id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+                                                                aria-haspopup="true" aria-expanded="false">Bài tập của
+                                                                Phúc</a>
+                                                        <!-- a tag -->
+
+                                                        <!-- dropdown menu  -->
+                                                        <div class="dropdown-menu dropdown-default"
+                                                                aria-labelledby="navbarDropdownMenuLink-333">
+                                                                <!-- a tag -->
+                                                                <a class="dropdown-item" href="#">Action 1</a>
+                                                                <a class="dropdown-item" href="#">Action 2</a>
+                                                                <!-- a tag -->
+                                                        </div>
+                                                        <!-- dropdown menu  -->
+                                                </li>
+                                                <!-- item dropdown -->
+
+                                        </ul>
+                                </div>
+                </nav>
+                <!-- navigation -->
+        </main>
+        <!-- id="class_container" -->
+        <div class="container">
+                <blockquote class="blockquote bq-primary">
+                        <h1 class="display-3">Bài tập số 01</h1>
+                        <p class="lead"><b>Yêu cầu:</b></p>
+                        <ol class="lead" type="1">
+                                <li>Đăng kí tài khoản gitdub: tạo Project cho nhóm dưới dạng CSE391_K59_XY với X
+                                        là số
+                                        tdứ tự của
+                                        sinh
+                                        viên X trong Danh sách, Y là số tdứ tự của sinh viên Y trong Danh sách
+                                        (Danh
+                                        sách môn học).</li>
+                                <li>Đồng bộ Project về máy local, chia sẻ Project với bạn cùng nhóm.</li>
+                                <li>Làm và nộp bài tập Sơ đồ lớp trên Project của Gitdub.</li>
+                        </ol>
+                </blockquote>
+                <img src="/img/Screenshot from 2019-04-29 12-38-21.png" alt="yeu cau 1" width="100%">
+                <table class="table table-responsive-md table-striped table-bordered">
+                        <tbody>
+                                <tr>
+                                        <th scope="row">3</th>
+                                        <td><button id="student" type="button" class="btn btn-primary"
+                                                        data-toggle="popover" data-placement="top" title="Ngô Doãn Đạt"
+                                                        data-content="Masv : 195A071484. Nhom : 4">Ngô
+                                                        Doãn Đạt</button>
+                                        </td>
+
+                                        <td><button id="student" type="button" class="btn btn-primary"
+                                                        data-toggle="popover" data-placement="top" title="Ngô Doãn Đạt"
+                                                        data-content="Masv : 195A071484. Nhom : 4">Ngô
+                                                        Doãn Đạt</button>
+                                        </td>
+
+                                        <td><button id="student" type="button" class="btn btn-primary"
+                                                        data-toggle="popover" data-placement="top" title="Ngô Doãn Đạt"
+                                                        data-content="Masv : 195A071484. Nhom : 4">Ngô
+                                                        Doãn Đạt</button>
+                                        </td>
+
+                                        <td><button id="student" type="button" class="btn btn-primary"
+                                                        data-toggle="popover" data-placement="top" title="Ngô Doãn Đạt"
+                                                        data-content="Masv : 195A071484. Nhom : 4">Ngô
+                                                        Doãn Đạt</button>
+                                        </td>
+
+                                        <td><button id="student" type="button" class="btn btn-primary"
+                                                        data-toggle="popover" data-placement="top" title="Ngô Doãn Đạt"
+                                                        data-content="Masv : 195A071484. Nhom : 4">Ngô
+                                                        Doãn Đạt</button>
+                                        </td>
+
+                                        <td><button id="student" type="button" class="btn btn-primary"
+                                                        data-toggle="popover" data-placement="top" title="Ngô Doãn Đạt"
+                                                        data-content="Masv : 195A071484. Nhom : 4">Ngô
+                                                        Doãn Đạt</button>
+                                        </td>
+
+                                <tr>
+                                        <th scope="row">2</th>
+                                        <td><button id="student" type="button" class="btn btn-primary"
+                                                        data-toggle="popover" data-placement="top" title="Ngô Doãn Đạt"
+                                                        data-content="Masv : 195A071484. Nhom : 4">Ngô
+                                                        Doãn Đạt</button>
+                                        </td>
+
+                                        <td><button id="student" type="button" class="btn btn-primary"
+                                                        data-toggle="popover" data-placement="top" title="Ngô Doãn Đạt"
+                                                        data-content="Masv : 195A071484. Nhom : 4">Ngô
+                                                        Doãn Đạt</button>
+                                        </td>
+
+                                        <td><button id="student" type="button" class="btn btn-primary"
+                                                        data-toggle="popover" data-placement="top" title="Ngô Doãn Đạt"
+                                                        data-content="Masv : 195A071484. Nhom : 4">Ngô
+                                                        Doãn Đạt</button>
+                                        </td>
+
+                                        <td><button id="student" type="button" class="btn btn-primary"
+                                                        data-toggle="popover" data-placement="top" title="Ngô Doãn Đạt"
+                                                        data-content="Masv : 195A071484. Nhom : 4">Ngô
+                                                        Doãn Đạt</button>
+                                        </td>
+
+                                        <td><button id="student" type="button" class="btn btn-primary"
+                                                        data-toggle="popover" data-placement="top" title="Ngô Doãn Đạt"
+                                                        data-content="Masv : 195A071484. Nhom : 4">Ngô
+                                                        Doãn Đạt</button>
+                                        </td>
+
+                                        <td><button id="student" type="button" class="btn btn-primary"
+                                                        data-toggle="popover" data-placement="top" title="Ngô Doãn Đạt"
+                                                        data-content="Masv : 195A071484. Nhom : 4">Ngô
+                                                        Doãn Đạt</button>
+                                        </td>
+
+                                </tr>
+                                <tr>
+                                        <th scope="row">1</th>
+                                        <td><button id="student" type="button" class="btn btn-primary"
+                                                        data-toggle="popover" data-placement="top" title="Ngô Doãn Đạt"
+                                                        data-content="Masv : 195A071484. Nhom : 4">Ngô
+                                                        Doãn Đạt</button>
+                                        </td>
+
+                                        <td><button id="student" type="button" class="btn btn-primary"
+                                                        data-toggle="popover" data-placement="top" title="Ngô Doãn Đạt"
+                                                        data-content="Masv : 195A071484. Nhom : 4">Ngô
+                                                        Doãn Đạt</button>
+                                        </td>
+
+                                        <td><button id="student" type="button" class="btn btn-primary"
+                                                        data-toggle="popover" data-placement="top" title="Ngô Doãn Đạt"
+                                                        data-content="Masv : 195A071484. Nhom : 4">Ngô
+                                                        Doãn Đạt</button>
+                                        </td>
+
+                                        <td><button id="student" type="button" class="btn btn-primary"
+                                                        data-toggle="popover" data-placement="top" title="Ngô Doãn Đạt"
+                                                        data-content="Masv : 195A071484. Nhom : 4">Ngô
+                                                        Doãn Đạt</button>
+                                        </td>
+
+                                        <td><button id="student" type="button" class="btn btn-primary"
+                                                        data-toggle="popover" data-placement="top" title="Ngô Doãn Đạt"
+                                                        data-content="Masv : 195A071484. Nhom : 4">Ngô
+                                                        Doãn Đạt</button>
+                                        </td>
+
+                                        <td><button id="student" type="button" class="btn btn-primary"
+                                                        data-toggle="popover" data-placement="top" title="Ngô Doãn Đạt"
+                                                        data-content="Masv : 195A071484. Nhom : 4">Ngô
+                                                        Doãn Đạt</button>
+                                        </td>
+                                </tr>
+                                <tr class="text-center">
+                                        <th scope="col">hàng/dãy/th>
+                                        <th>dãy 1</th>
+                                        <th>dãy 2</th>
+                                        <th>dãy 3</th>
+                                        <th>dãy 4</th>
+                                        <th>dãy 5</th>
+                                        <th>dãy 6</th>
+                                </tr>
+                                <tr>
+                                        <td colspan="5"></td>
+                                        <td colspan="2"><button id="student" type="button" class="btn btn-primary"
+                                                        data-toggle="popover" data-placement="top"
+                                                        title="master Kiều Tuấn Dũng"
+                                                        data-content="Masterchef DEV. Đặc điểm: đẹp troai nhất lớp.">master
+                                                        Kiều Tuấn Dũng</button></td>
+                                </tr>
+                        </tbody>
+                </table>
+                <!-- /container -->
         </div>
-    </header>
-    <!--the navigation trong main duoc su dung thong qua framework cua bootstrap-->
-    <main role="main">
-        <nav class=" navbar navbar-expand-lg navbar-dark blue-gradient">
-            <div class="container font-weight-bold">
-                <a class="navbar-brand" href="/"><i class="fas fa-home"></i> Trang chủ</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
-                    <ul class="navbar-nav mr-auto">
+        <hr>
+        <!-- Footer -->
+        <footer class="page-footer font-small blue-gradient pt-4">
+                <!-- Footer Links -->
+                <div class="container-fluid text-center text-md-left">
+                        <!-- Grid row -->
+                        <div class="row">
+                                <!-- Grid column -->
+                                <div class="col-md-6 mt-md-0 mt-3">
+                                        <!-- Content -->
+                                        <h5 class="text-uppercase">TEAM PHUCDATBICH</h5>
+                                        <p>Các nguồn tdam khảo làm font-end mời các bạn tdam khảo ở đây.</p>
+                                </div>
+                                <!-- Grid column -->
+                                <hr class="clearfix w-100 d-md-none pb-3">
+                                <!-- Grid column -->
+                                <div class="col-md-3 mb-md-0 mb-3">
+                                        <!-- Links -->
+                                        <h5 class="text-uppercase">Links</h5>
+                                        <ul class="list-unstyled">
+                                                <li>
+                                                        <a href="https://mdbootstrap.com/">mdbootstrap</a>
+                                                </li>
+                                                <li>
+                                                        <a href="http://wallpaperswide.com/">wallpaperswide</a>
+                                                </li>
+                                                <li>
+                                                        <a href="https://colorlib.com/wp/templates/">Các Teamplate miễn
+                                                                phí tdam khảo</a>
+                                                </li>
+                                                <li>
+                                                        <a href="https://www.facebook.com/groups/cse391.k59/">Nhóm tdảo
+                                                                luận nền tảng phát triển
+                                                                web</a>
+                                                </li>
+                                                <li>
+                                                        <a href="https://www.wallpaperup.com/">wallpaperup</a>
+                                                </li>
+                                        </ul>
+                                </div>
+                                <!-- Grid column -->
 
-                        <!--navigation active -->
-                        <li class="nav-item active">
-                            <a href="/project/" class="nav-link">Project</a>
-                        </li>
-                        <!--navigation active -->
-                        <!-- item dropdown -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">Bài tập của Đạt</a>
-                            <!-- dropdown menu  -->
-                            <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
-                                <a class="dropdown-item" href="/src-dat/BTTH01/exercise-1.html">Bài tập 01</a>
+                                <!-- Grid column -->
+                                <div class="col-md-3 mb-md-0 mb-3">
+                                        <h5 class="text-uppercase">Liên lạc</h5>
+                                        <ul class="list-unstyled">
+                                                <li>
+                                                        <a href="https://www.facebook.com/dat.ngodoan.9"><i
+                                                                        class="fab fa-facebook-square"></i> Đạt
+                                                                Ken</a>
+                                                </li>
+                                                <li>
+                                                        <a href="https://www.facebook.com/tatdiphuc99"><i
+                                                                        class="fab fa-facebook-square"></i> Phúc
+                                                                Tồ</a>
+                                                </li>
+                                                <li>
+                                                        <a href="https://www.facebook.com/kieutuandung"><i
+                                                                        class="fab fa-facebook-square"></i>
+                                                                master Kiều Tuấn Dũng</a>
+                                                </li>
+                                                <li>
+                                                        <a href=""><i class="fas fa-envelope"></i> datnd72@wru.vn</a>
+                                                </li>
+                                        </ul>
+                                </div>
+                                <!-- Grid column -->
 
-                            </div>
-                            <!-- dropdown menu  -->
-                        </li>
-                        <!-- item dropdown -->
-
-                        <!-- item dropdown -->
-                        <li class="nav-item dropdown">
-                            <!-- a tag -->
-                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">Bài tập của Phúc</a>
-                            <!-- a tag -->
-
-                            <!-- dropdown menu  -->
-                            <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
-                                <!-- a tag -->
-                                <a class="dropdown-item" href="#">Action 1</a>
-                                <a class="dropdown-item" href="#">Action 2</a>
-                                <!-- a tag -->
-                            </div>
-                            <!-- dropdown menu  -->
-                        </li>
-                        <!-- item dropdown -->
-
-                    </ul>
+                        </div>
+                        <!-- Grid row -->
                 </div>
-        </nav>
-        <!-- navigation -->
-    </main>
-    <!-- id="class_container" -->
-    <div id="class_container" class="container">
-        <blockquote class="blockquote bq-primary">
-            <h1 class="display-3">Bài tập số 01</h1>
-            <p class="lead"><b>Yêu cầu:</b></p>
-            <ol class="lead" type="1">
-                <li>Đăng kí tài khoản github: tạo Project cho nhóm dưới dạng CSE391_K59_XY với X là số thứ tự của
-                    sinh
-                    viên X trong Danh sách, Y là số thứ tự của sinh viên Y trong Danh sách (Danh sách môn học).</li>
-                <li>Đồng bộ Project về máy local, chia sẻ Project với bạn cùng nhóm.</li>
-                <li>Làm và nộp bài tập Sơ đồ lớp trên Project của Github.</li>
-            </ol>
-        </blockquote>
-
-        <img src="/img/Screenshot from 2019-04-29 12-38-21.png" alt="yeu cau 1" width="100%">
-        <table class="table table-responsive-md table-striped table-bordered">
-            <tbody>
-                <tr>
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-
-                    <td><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="Ngô Doãn Đạt" data-content="Masv : 195A071484. Nhom : 4">Ngô
-                            Doãn Đạt</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="7"></td>
-                    <td colspan="3"><button id="student" type="button" class="btn btn-primary" data-toggle="popover"
-                            data-placement="top" title="master Kiều Tuấn Dũng" data-content="Masterchef DEV. Đặc điểm: đẹp troai nhất lớp.">master
-                            Kiều Tuấn Dũng</button></td>
-                </tr>
-            </tbody>
-        </table>
-        <!-- /container -->
-    </div>
-    <hr>
-    <!-- Footer -->
-    <footer class="page-footer font-small blue-gradient pt-4">
-        <!-- Footer Links -->
-        <div class="container-fluid text-center text-md-left">
-            <!-- Grid row -->
-            <div class="row">
-                <!-- Grid column -->
-                <div class="col-md-6 mt-md-0 mt-3">
-                    <!-- Content -->
-                    <h5 class="text-uppercase">TEAM PHUCDATBICH</h5>
-                    <p>Các nguồn tham khảo làm font-end mời các bạn tham khảo ở đây.</p>
-                </div>
-                <!-- Grid column -->
-                <hr class="clearfix w-100 d-md-none pb-3">
-                <!-- Grid column -->
-                <div class="col-md-3 mb-md-0 mb-3">
-                    <!-- Links -->
-                    <h5 class="text-uppercase">Links</h5>
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="https://mdbootstrap.com/">mdbootstrap</a>
-                        </li>
-                        <li>
-                            <a href="http://wallpaperswide.com/">wallpaperswide</a>
-                        </li>
-                        <li>
-                            <a href="https://colorlib.com/wp/templates/">Các Teamplate miễn phí tham khảo</a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/groups/cse391.k59/">Nhóm thảo luận nền tảng phát triển
-                                web</a>
-                        </li>
-                        <li>
-                            <a href="https://www.wallpaperup.com/">wallpaperup</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
-                <div class="col-md-3 mb-md-0 mb-3">
-                    <h5 class="text-uppercase">Liên lạc</h5>
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="https://www.facebook.com/dat.ngodoan.9"><i class="fab fa-facebook-square"></i> Đạt
-                                Ken</a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/tathiphuc99"><i class="fab fa-facebook-square"></i> Phúc
-                                Tồ</a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/kieutuandung"><i class="fab fa-facebook-square"></i>
-                                master Kiều Tuấn Dũng</a>
-                        </li>
-                        <li>
-                            <a href=""><i class="fas fa-envelope"></i> datnd72@wru.vn</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Grid column -->
-
-            </div>
-            <!-- Grid row -->
-        </div>
-        <!-- Footer Links -->
+                <!-- Footer Links -->
 
 
-        <!-- Copyright -->
-        <div class="footer-copyright py-3"></div>
-        <!-- Copyright -->
+                <!-- Copyright -->
+                <div class="footer-copyright py-3"></div>
+                <!-- Copyright -->
 
-    </footer>
-    <!-- Footer -->
+        </footer>
+        <!-- Footer -->
 
-    <!-- JQuery -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.7/js/mdb.min.js"></script>
-    <script src="/js/exercise-1.js"></script>
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript"
+                src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript"
+                src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript"
+                src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.7/js/mdb.min.js"></script>
+        <script src="/js/exercise-1.js"></script>
 </body>
 
 </html>
