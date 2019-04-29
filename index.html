@@ -17,61 +17,147 @@
 
 <body>
 
-  <!-- main navigation -->
-  <header style="background: url('/img/joanna-kosinska-439234-unsplash.jpg') no-repeat">
-    <div style="padding:60px">
-      <h1 class=" font-weight-bold text-center">NỀN TẢNG VÀ PHÁT TRIỂN WEB</h1>
+  <!--header-->
+  <header>
+    <div class="hd">
+      <h1 class="font-weight-bold">NỀN TẢNG VÀ PHÁT TRIỂN WEB</h1>
       <hr class="hr-dark my-2" width="200">
-      <h3 class=" text-center">LỚP CSE391</h3>
-      <h3 class=" text-center">Giáo viên hướng dẫn: master Dũng Kiều Tuấn</h3>
+      <h3>LỚP CSE391</h3>
+      <h3>Giáo viên hướng dẫn: master Kiều Tuấn Dũng</h3>
+      <h3>Team design: PHUCDATBICH</h3>
     </div>
   </header>
-  <!--the navigation duoc su dung thong qua framework cua bootstrap-->
+  <!--the navigation trong main duoc su dung thong qua framework cua bootstrap-->
   <main role="main">
-    <nav class="navbar navbar-expand-sm aqua-gradient">
-      <div class="container">
+    <nav id="navbar" class="mb-1 navbar navbar-expand-lg navbar-dark blue-gradient">
+      <div class="container font-weight-bold">
+        <a class="navbar-brand whitetext-text " href="/"><i class="fas fa-home"></i> Trang chủ</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+          aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+          <ul class="navbar-nav mr-auto">
 
-        <div class="col-md-6">
-          <ul class="navbar-nav md-fills nav-justified font-weight-bold">
+            <!--navigation active -->
             <li class="nav-item active">
-              <a class="nav-link white-text" href="/index.html"><i class="fas fa-home"></i>Trang chủ</a>
+              <a href="/project/" class="nav-link ">Project</a>
             </li>
+            <!--navigation active -->
+            <!-- item dropdown -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle white-text" href="#" id="dropdownId" data-toggle="dropdown"
+              <a class="nav-link dropdown-toggle " id="navbarDropdownMenuLink-333" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">Bài tập của Đạt</a>
-              <div class="dropdown-menu" aria-labelledby="dropdownIdbai">
+              <!-- dropdown menu  -->
+              <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
                 <a class="dropdown-item" href="/src-dat/BTTH01/exercise-1.html">Bài tập 01</a>
-                <a class="dropdown-item" href="/src-dat/BTTH01/exercise-2.html">Bài tập 02</a>
+
               </div>
+              <!-- dropdown menu  -->
             </li>
+            <!-- item dropdown -->
+
+            <!-- item dropdown -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle white-text" href="#" id="dropdownId" data-toggle="dropdown"
+              <!-- a tag -->
+              <a class="nav-link dropdown-toggle " id="navbarDropdownMenuLink-333" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">Bài tập của Phúc</a>
-              <div class="dropdown-menu" aria-labelledby="dropdownIdbai">
+              <!-- a tag -->
+
+              <!-- dropdown menu  -->
+              <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
+                <!-- a tag -->
                 <a class="dropdown-item" href="#">Action 1</a>
                 <a class="dropdown-item" href="#">Action 2</a>
+                <!-- a tag -->
               </div>
+              <!-- dropdown menu  -->
             </li>
-            <li class="nav-item active">
-              <a href="/project/" class="nav-link white-text">Project</a>
-            </li>
-          </ul>
+            <!-- item dropdown -->
 
+          </ul>
         </div>
     </nav>
+    <!-- navigation -->
   </main>
-  <!-- main layout -->
-  <!-- container -->
+  <!-- header -->
 
+  <!-- container -->
   <div class="container">
-
+    <div class="col-8">
+      <h1>Liều và Lĩnh</h1>
+      <p><strong>Liều và Lĩnh – Tony Buổi Sáng</strong></p>
+      <p><strong>Lúc thực tập, Tony có đi làm cho một xí nghiệp giày xuất khẩu. Bên Hàn
+          Quốc cung cấp một loại keo dán đế, có chứa dung môi dễ bắt lửa, nên quản đốc căn dặn công nhân tuyệt đối không
+          được hút thuốc trong nhà xưởng. Nhưng vừa quay đi thì có cậu công nhân móc ra làm điếu vì thèm, thấy quản lý
+          tới thì vội ném xuống sàn rồi lấy chân giẫm lên. Có lần vừa ném xuống, trúng vào lọ keo bị đổ, thế là cháy
+          bùng lên. Mời lên phòng kỷ luật thì gật gật gù gù dạ em hiểu, em hứa, em thề, nhưng hôm sau vẫn chứng nào tật
+          đấy. Tony phải đề xuất cho nghỉ việc vì chẳng mấy chốc mà nướng hết mấy trăm công nhân và biến xí nghiệp thành
+          lò quay. Lúc đó có quánh có đập nó thì sự cũng đã rồi.</strong></p>
+      <img src="https://www.tonybuoisangonline.com/wp-content/uploads/2014/09/lieu-va-linh.jpg" alt="Liều và Lĩnh"
+        width="100%">
+      <p>Giao thông ở ta là nơi biểu diễn <strong>cái liều nhiều nhất</strong>. Xa lộ, cao
+        tốc và thình lình
+        những người băng qua đường, trèo lên dải phân cách dưới làn xe vun vút. Cầu vượt bộ hành chỉ dành cho vài cặp
+        tình nhân leo lên đó để ngắm xe. Hay những bạn thơ ngây đi ngược chiều hay đường cấm, vừa đạp xe vừa hát, vừa
+        đạp xe vừa gặm bánh mì, nó tông 1 phát thì “<strong>câu hát ngân lên bỗng tắt nửa chừng</strong>“. Những chiếc
+        xe máy chạy cắt
+        ngang đầu xe hơi cái rẹt, chỉ một phút lơ là của tài xế xe hơi là có thể leo lên nóc tủ suốt ngày ăn chuối xanh,
+        ngắm gà khỏa thân, nhưng chỉ có người nước ngoài là thấy sợ, người Việt thấy bình thường với cảnh đó. Không ai
+        hiểu sao có một quốc gia mà giao thông rối rắm phức tạp, nhiều loại phương tiện từ thô sơ đến siêu sang tranh
+        nhau từng mét đường, còi bóp inh ỏi, la hét gầm gừ, ném vào nhau những ngôn từ xấu xí nhất của tiếng Việt và ánh
+        mắt giận dữ khi va quẹt. Nếu đụng nhau, người đi xe đạp sẽ mắng người đi xe máy, người đi xe máy sẽ mắng người
+        đi xe hơi. Cứ xe to hơn là có lỗi trước mắt và thường nhường nhịn thì là bỏ qua, nhưng nếu sừng cồ lại thì sẽ
+        dẫn đến tranh chấp quyết liệt, thậm chí nói có mã tấu trong cốp xe tao nha mậy.</p>
+      <p>Có cái <strong>tự liều</strong>, như việc đi ngắm bão chụp hình, đứng càng sát
+        chụp càng đẹp rồi bị sóng cuốn xuống biển, Long
+        Vương hỏi vì sao con chết thì nói ủa ông không coi hình con mới khoe trên facebook hôm nay hả? Đi tàu trên biển
+        hay sông, có áo phao nhưng không ai mặc. Thậm chí có phà chở mấy trăm khách nhưng chỉ có vài chục cái áo phao,
+        với quan niệm là xưa nay chưa chìm phà bao giờ. Lỡ sự cố xảy ra, thì tính sao?</p>
+      <p><strong></strong></p>
+      <p>Dân mình cũng chết nhiều vì tò mò. Nghe nổ cái đùng thì thay vì nằm xuống hay chạy
+        đi, lại chen lấn nhau coi, sau đó nếu có nổ thêm một cái nữa thì chết sạch trơn. Chết trong ngơ ngác. Nhưng cũng
+        có cái do người khác liều mà gây hại. Những sợi dây điện bùi nhùi dọc ngang trên phố, có thể sau trận “chiều mưa
+        giông tới” là rơi xuống đường, nếu không đứt thì cũng tòn teng móc cổ người chạy xe máy, còn nếu đứt thì rơi
+        xuống vũng nước ở đường phố, nơi nước thoát không kịp và nước cũng là chất dẫn điện tốt. Nhưng phải có sự cố thì
+        mạng nhện ấy mới được tháo bỏ, còn dọn dẹp gọn gàng trước để hạn chế tai nạn thì không làm vì nghĩ không ra.
+        Những bếp ga mini rỉ sét loang lổ vẫn được sử dụng bơm ga tới bơm ga lui cả trăm cả ngàn lần, bật lửa tanh tách
+        trên các bàn nhậu và xung quanh là hàng chục khuôn mặt đang hau háu ngắm nhìn cái lẩu. Sự cố xảy ra một cái
+        héng, thì lên bệnh viện cho bác sĩ gắp lưỡi heo ra khỏi lưỡi người. Những câu như ”<strong> đưa tao ăn cho, chết
+          chóc
+          gì</strong>” thường thấy khi phải đổ bỏ thức ăn bị ôi thiu, khoai tây lên mầm, bánh kẹo nhuộm màu công nghiệp
+        vì tiếc. Bị
+        ngộ độc rồi thì mới vừa khóc vừa ói nói dạ để em rút kinh nghiệm.</p>
+      <p> Ở <strong>Trung Quốc</strong>, người ta cũng <strong>liều kinh khủng</strong> và
+        hậu quả cũng khôn lường. Khi <strong>Tony</strong> đề cập đến thực phẩm có quá
+        nhiều hóa chất của nước họ, họ trả lời tỉnh bơ “thì cũng sống là bao, 80 tuổi là cùng chứ gì” như một cách bao
+        biện rất phổ biến.</p>
+      <p>Chúng ta hay đổ tai nạn giao thông là do đường sá chật chội xuống cấp, nhưng đó
+        chỉ là một phần, cái ý thức giao thông mới là quan trọng. Chẳng hạn ở Trung Quốc, hệ thống đường sá ở một số
+        thành phố duyên hải thậm chí tốt nhất nhì thế giới, nhưng tai nạn giao thông vẫn xảy ra nhiều. Ở Tp Thanh Đảo,
+        có lần anh Lý đang lái xe hơi chạy trên đường thì phát hiện anh Chu đi xe máy ở chiều ngược lại, thế là anh Lý
+        vội thắng (phanh) xe cái két, chắc chỉ để chào hỏi nỉ hạo ma cho vui. Mấy chiếc xe đang chạy phía sau xử lý
+        không kịp, thế là tông đít xe anh Lý cái rầm. Đợi miết không thấy anh Lý xuống xe vung tay chửi bới như mọi khi,
+        tới mở cửa thì mới thấy anh Lý đã chết trên vô lăng. Hóa ra anh Lý vừa lái xe một tay, còn tay kia móc cứt mũi
+        -một thói quen đáng yêu ở châu Á – thì bị tông từ phía sau nên hai ngón tay (đang nằm trong mũi, bị lực quán
+        tính) đâm thẳng vào sóng mũi lên tận mắt, ngộp thở, chết.</p>
+      <p>Và báo chí thống kê, trên khắp Trung Quốc, một năm có khoảng 600,000 công nhân chết vì các
+        lỗi <strong> ngáo ngơ, bất
+          cẩn, liều mạng</strong>.</p>
+      <p><strong>Các bạn làm sản xuất nói riêng, tuyệt đối không được liều.</strong></p>
+      <p>
+        <srtong>Ở đời, liều thì sẽ lĩnh</srtong>
+      </p>
+    </div>
   </div>
-
   <!-- container -->
-  <hr class="hr-light">
-  <!-- Footer -->
-  <footer class="page-footer font-small aqua-gradient pt-4">
 
+  <!-- hr tag -->
+  <hr class="hr-light">
+  <!-- hr tag -->
+
+  <!-- Footer -->
+  <footer class="page-footer font-small blue-gradient pt-4">
     <!-- Footer Links -->
     <div class="container-fluid text-center text-md-left">
       <!-- Grid row -->
@@ -107,21 +193,24 @@
           </ul>
         </div>
         <!-- Grid column -->
+
         <!-- Grid column -->
         <div class="col-md-3 mb-md-0 mb-3">
           <h5 class="text-uppercase">Liên lạc</h5>
           <ul class="list-unstyled">
             <li>
-              <a href="https://www.facebook.com/dat.ngodoan.9"><i class="fab fa-facebook-square"></i>  Đạt Ken</a>
+              <a href="https://www.facebook.com/dat.ngodoan.9"><i class="fab fa-facebook-square"></i> Đạt Ken</a>
             </li>
-
             <li>
-                <a href="https://www.facebook.com/tathiphuc99"><i class="fab fa-facebook-square"></i>  Phúc Tồ</a>
-              </li>
-
+              <a href="https://www.facebook.com/tathiphuc99"><i class="fab fa-facebook-square"></i> Phúc Tồ</a>
+            </li>
             <li>
-                <a href=""><i class="fas fa-envelope"></i>    datnd72@wru.vn</a>
-              </li>
+              <a href="https://www.facebook.com/kieutuandung"><i class="fab fa-facebook-square"></i> master Kiều Tuấn
+                Dũng</a>
+            </li>
+            <li>
+              <a href=""><i class="fas fa-envelope"></i> datnd72@wru.vn</a>
+            </li>
           </ul>
         </div>
         <!-- Grid column -->
@@ -130,9 +219,9 @@
       <!-- Grid row -->
     </div>
     <!-- Footer Links -->
+
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">
-    </div>
+    <div class="footer-copyright py-3"></div>
     <!-- Copyright -->
 
   </footer>
@@ -147,8 +236,6 @@
     src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.7/js/mdb.min.js"></script>
-
-
 
 </body>
 
