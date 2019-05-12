@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    main {
+      margin: 100px;
+      width: 1000px;
+      height: 700px;
+      align-content: center;
+      background-color: aquamarine;
+      display: flex;
+      text-align: center;
+    }
+
+    .input {
+      margin: 10px;
+      width: 50%;
+    }
+
+    #btn {
+      padding: 10px;
+      background: transparent;
+      border: 0px;
+    }
+
+    #btn:hover {
+      padding: 10px;
+      background: rgb(147, 147, 255);
+      border: 1px rgba(255, 255, 255, 0.548) solid;
+      border-radius: 20px;
+      color: white;
+    }
+
+    #fruit {
+      width: 250px;
+      height: 25px;
+    }
+
+    #fruit::after {
+      border: 1px;
+    }
+
+    .output {
+      margin: 10px;
+      width: 50%;
+    }
+    #my_image {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1 style="text-align: center">
+      bài tập về nhà 04
+    </h1>
+  </header>
+  <main role="main">
+    <div class="input">
+      <form action="">
+        <h2>Fruit Entry</h2>
+        <p>Fruit: <input type="text" id="fruit" placeholder="Nhập một loại hoa quả"></p>
+        <input type="button" value="Show Fruit" id="btn">
+      </form>
+    </div>
+    <div class="output">
+      <h2>Fruit Display</h2>
+      <img id="my_image">
+    </div>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+    <script src="./bai4.js"></script>
+</body>
+
+</html>
