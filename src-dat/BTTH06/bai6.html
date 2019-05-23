@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>bai6</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.7/css/mdb.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./bai6.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: white;">
+      <a class="navbar-brand text-dark" href="#">CSE391</a>
+      <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+        aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Bài tập tổng hợp 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Bài tập tổng hợp 2</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main role="main">
+    <div class="container">
+      <div class="add_task">
+        <button id="add_task" type="button" class="btn btn-outline-primary btn-lg btn-block waves-effect"
+          title="Add new task">
+          <i class="fas fa-plus fa-lg pr-2"></i>
+        </button>
+      </div>
+      <div class="task">
+        <div class="md-form">
+          <i class="fas fa-cog fa-spin prefix"></i>
+          <input placeholder="nhập tên task của bạn" type="text" id="inputPlaceholderEx" class="form-control">
+          <!-- <label for="inputPlaceholderEx">Your Task</label> -->
+        </div>
+      </div>
+      <div class="task">
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
+          <label class="custom-control-label" for="defaultUnchecked">day ko phai la task</label>
+        </div>
+      </div>
+      <div class="mark_all">
+        <!-- <section class="button"><i class="fas fa-bookmark indigo-text fa-lg pr-2"></i>Mark All Done</section> -->
+        <button id="mark_all" type="button" class="btn btn-outline-primary btn-lg btn-block waves-effect"
+          title="Mark All Done">
+          <i class="fas fa-bookmark indigo-text fa-lg pr-2"></i>
+        </button>
+      </div>
+      <div class="dark_mode">
+        <!-- <section class="button"><i class="fas fa-moon indigo-text fa-lg pr-2"></i>Toggle Dark Mode</section>
+      </div> -->
+      <button id="dark_mode" type="button" class="btn btn-outline-primary btn-lg btn-block waves-effect"
+          title="Toggle Dark Mode">
+          <i class="fas fa-moon indigo-text fa-lg pr-2"></i>
+        </button>
+      <div class="doala">
+        <!-- <section class="button"><i class="fas fa pr-2" aria-hidden="true">🐨</i>About Doala</section> -->
+        <button id="doala" type="button" class="btn btn-outline-primary btn-lg btn-block waves-effect"
+        title="About Doala">
+        <i class="fas indigo-text fa-lg pr-2">🐨</i>
+      </button>
+      </div>
+    </div>
+  </main>
+  <!-- JQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.7/js/mdb.min.js"></script>
+  <script src="/src-dat/BTTH06/bai6.js"></script>
+</body>
+
+</html>

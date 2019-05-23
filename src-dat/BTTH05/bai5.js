@@ -5,12 +5,9 @@ $(document).ready(function () {
     data: {},
     success: function (data) {
       $.each(data, function (idx, item) {
-        // var $th = $('<th scope="row">'++'</th>');
         var img = '<img id="' + item.id + '" src="' + item.source + '" alt="' + item.id + ': ' + item.fname + ' class="modal-hover-opacity">';
-        // var $tr = $('<tr id="+'idx'+"></tr>');
         var $td = $('<td>' + img + '</td>');
         if (idx < 10) {
-          // $('#col').appendTo('<th>' + idx + 1 + '</th>');
           $td.appendTo($("#row1"));
         }
         if (idx < 20 && idx> 9) {

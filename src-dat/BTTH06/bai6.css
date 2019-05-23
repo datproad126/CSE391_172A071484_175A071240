@@ -1,0 +1,94 @@
+body {
+  background-color: rgb(252, 149, 166);
+}
+
+.container {
+  margin-top: 100px;
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 0;
+  background-color: white;
+}
+#add_task {
+  border-color: rgba(255, 255, 255, 0) !important;
+  border-top: 0px !important;
+  border-left: 0px !important;
+  border-right: 0px !important;
+  border-radius: 12px 12px 0px 0px;
+}
+#add_task:hover {
+  border-color: #007bff !important;
+}
+#mark_all {
+  border-color: rgba(255, 255, 255, 0) !important;
+  border-top: 0px !important;
+  border-left: 0px !important;
+  border-right: 0px !important;
+}
+#mark_all:hover {
+  border-color: #007bff !important;
+}
+#dark_mode {
+  border-color: rgba(255, 255, 255, 0) !important;
+  border-top: 0px !important;
+  border-left: 0px !important;
+  border-right: 0px !important;
+}
+#dark_mode:hover {
+  border-color: #007bff !important;
+  /* background-color: #6c757d !important; */
+}
+#doala {
+  border-color: rgba(255, 255, 255, 0) !important;
+  /* border-top: 0px !important; */
+  border-left: 0px !important;
+  border-right: 0px !important;
+  border-bottom: 0px !important;
+  border-radius: 0px 0px 12px 12px;
+}
+#doala:hover { 
+  border-color: #007bff !important;
+}
+.button {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  padding: 11.2px;
+  border: 0px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.task {
+  padding: 11.2px;
+  width: 100%;
+}
+
+.ck-box {
+  font-size: 110%;
+}
+
+
+.task {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  padding: 11.2px;
+  border: 0px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.cs-form {
+  border: 1px solid rgba(0, 0, 0, 0);
+  width: 100%;
+  padding: 3px;
+}
+
+.lb {
+  padding-left: 12px;
+}
+
+.md-form{
+  margin: 0;
+}
+
+/* blur */
