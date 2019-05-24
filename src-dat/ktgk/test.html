@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #Entry {
+            text-align: right;
+        }
+
+        #form {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Define-it</h2>
+    <div class="form">
+        <div>Term: <input id="Term" type="text"></div>
+        <div>Description:
+            <br>
+            <textarea name="des" id="Description" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <input id="Entry" type="button" value="Add Entry!">
+        </div>
+    </div>
+    <div id="form">
+        <h2>Current dictionary entries</h2>
+        <ul id="list">
+        </ul>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            var val_term = '';
+            var val_des = '';
+            $('#Entry').click(function () {
+                $('#form').css('display', 'block');
+                val_term = $('#Term').val();
+                val_des = $('#Description').val();
+                var $add_el = $('<li>' + val_term + ': ' + val_des + '</li>');
+                $('#list').append($add_el);
+            });
+        }); 
+    </script>
+</body>
+
+</html>
