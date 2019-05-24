@@ -46,13 +46,15 @@ $(function () {
         }
       });
       //handle event click button mark_all
-      // handle chưa triệt để trường hợp vì ko biết lý do ở đâu (sẽ fix tiếp)
       $(document).on('click', '#mark_all', function () {
-        if (!$('.custom-control-input').is(':checked')) {
-          console.log($('.custom-control-input').attr('checked', true).length);
-          $('.custom-control-input').attr('checked', true);
-          $('.task_item').css('background-color', '#20c997');
-        }
+        $('.custom-control-input').each(function (index, element) {
+          // element == this
+          if (!$(element).is(':checked')) {
+            $(element).prop('checked', true);
+            $('.task_item').css('background-color', '#20c997');
+          }
+        });
+
       });
       // handle event click input type=checkbox, change color 
       $(document).on('click', '.custom-control-input', function () {
@@ -64,9 +66,9 @@ $(function () {
           $(this).parent().parent().css('background-color', 'rgba(0, 0, 0, 0)');
         };
       });
-
-      $('#doala').click(function () {
-        alert('Edit by: Đạt Ken :)) ấn ok để bất ngờ!!!!!!!');
+// handle koala button
+      $('#koala').click(function () {
+        alert('Editted by: Đạt Ken :)) ấn ok để bất ngờ!!!!!!!');
         window.location.href = "https://media.giphy.com/media/K3mLbBlK1BW4U/giphy.gif";
       });
 
