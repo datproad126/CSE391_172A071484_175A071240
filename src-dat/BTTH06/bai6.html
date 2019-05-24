@@ -18,7 +18,7 @@
 <body>
   <header>
     <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: white;">
-      <a class="navbar-brand text-dark" href="#">CSE391</a>
+      <a class="navbar-brand text-dark" href="#"><b>CSE391</b></a>
       <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
         aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
       <div class="collapse navbar-collapse" id="collapsibleNavId">
@@ -34,51 +34,37 @@
     </nav>
   </header>
   <main role="main">
-    <div class="container">
+    <div class="container" id="modelForm">
       <div class="add_task">
         <button id="add_task" type="button" class="btn btn-outline-primary btn-lg btn-block waves-effect"
           title="Add new task">
-          <i class="fas fa-plus fa-lg pr-2"></i>
+          <i class="fas fa-plus-square fa-lg pr-2"></i>
         </button>
       </div>
-      <div class="task">
-        <div class="md-form">
-          <i class="fas fa-cog fa-spin prefix"></i>
-          <input placeholder="nhập tên task của bạn" type="text" id="inputPlaceholderEx" class="form-control">
-          <!-- <label for="inputPlaceholderEx">Your Task</label> -->
-        </div>
-      </div>
-      <div class="task">
-        <div class="custom-control custom-checkbox">
-          <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
-          <label class="custom-control-label" for="defaultUnchecked">day ko phai la task</label>
-        </div>
+      <div class="task_menu">
       </div>
       <div class="mark_all">
-        <!-- <section class="button"><i class="fas fa-bookmark indigo-text fa-lg pr-2"></i>Mark All Done</section> -->
         <button id="mark_all" type="button" class="btn btn-outline-primary btn-lg btn-block waves-effect"
           title="Mark All Done">
           <i class="fas fa-bookmark indigo-text fa-lg pr-2"></i>
         </button>
       </div>
       <div class="dark_mode">
-        <!-- <section class="button"><i class="fas fa-moon indigo-text fa-lg pr-2"></i>Toggle Dark Mode</section>
-      </div> -->
-      <button id="dark_mode" type="button" class="btn btn-outline-primary btn-lg btn-block waves-effect"
+        <button id="dark_mode" type="button" class="btn btn-outline-primary btn-lg btn-block waves-effect"
           title="Toggle Dark Mode">
           <i class="fas fa-moon indigo-text fa-lg pr-2"></i>
         </button>
-      <div class="doala">
-        <!-- <section class="button"><i class="fas fa pr-2" aria-hidden="true">🐨</i>About Doala</section> -->
-        <button id="doala" type="button" class="btn btn-outline-primary btn-lg btn-block waves-effect"
-        title="About Doala">
-        <i class="fas indigo-text fa-lg pr-2">🐨</i>
-      </button>
+        <div class="doala">
+          <button id="doala" type="button" class="btn btn-outline-primary btn-lg btn-block waves-effect"
+            title="About Doala">
+            <i class="fas indigo-text fa-lg pr-2">🐨</i>
+          </button>
+        </div>
       </div>
-    </div>
   </main>
+
   <!-- JQuery -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <!-- Bootstrap tooltips -->
   <script type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
@@ -88,6 +74,7 @@
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.7/js/mdb.min.js"></script>
   <script src="/src-dat/BTTH06/bai6.js"></script>
+  <script></script>
 </body>
 
 </html>
