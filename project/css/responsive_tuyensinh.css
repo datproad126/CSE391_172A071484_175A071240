@@ -1,0 +1,71 @@
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 992px) {
+
+
+	
+		
+}
+@media (max-width: 768px) {
+	#header{
+		min-height:auto;
+		margin-bottom:15px;
+		}
+	#hd_top{
+		margin-bottom:0;
+		}
+	.navbar-brand>img{
+		height:60px;
+		}
+	#hd_bottom{
+		border-bottom:none;
+		margin:0;
+		}
+	.navbar-nav{
+		margin-top:0;
+		}
+	#heartbanner-slide .item .desc{
+		position:static;
+		background:#f6f6f6;
+		color:#333;
+		}
+	#heartbanner-slide .item .desc p{
+		display:none;
+		}
+	#heartbanner-slide .item .desc h2{
+		font-size:110%;
+		}
+	#heartbanner-slide .carousel-control{
+		background-image:none !important}
+	#newshot .col-lg-4{
+		margin-bottom:15px;
+		}
+	.hdCare h3{
+		font-size:24px;
+		}
+	.navbar-nav .dropdown:hover>.dropdown-menu{
+		background-color: #fff;
+		}
+	
+	
+	
+}
+
+
+@media (max-width: 450px) {
+	.pwrap .post-thumb{
+		float:none;
+		text-align:center;
+		margin:0 0 10px 0;
+		max-width:100%;
+		}
+	
+}
+	
+	
+	
+	
+
+

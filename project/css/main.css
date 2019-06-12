@@ -200,7 +200,8 @@ nav {
     display: block;
     background: url("images/new/menu.png") no-repeat scroll 10px; }
   .nav-left a:hover {
-    text-decoration: none; }
+     text-decoration: none; } 
+     /* định dạng văn bản bình thường  */
   .nav-left ul {
     width: 330px;
     margin: 0;
@@ -212,11 +213,13 @@ nav {
     background: #e6eae8;
     -ms-border-radius: 5px;
     border-radius: 5px;
+    /* 1 giá trị */
     display: none; }
     .nav-left ul li {
       background: none;
       margin: 0;
       border-bottom: 1px #ddd solid; }
+      /* xác định đường viền bên dưới */
     .nav-left ul a {
       white-space: nowrap;
       font-size: 13px;
@@ -249,7 +252,9 @@ nav {
   width: 100%;
   overflow: hidden;
   min-height: 213px;
+  /* chiều cao tối thiểu */
   margin-top: 18px; }
+  /* căn lề bên trên cho thành phần */
   .box-banner-home .banner-item-home {
     width: 210px;
     float: left;
@@ -270,6 +275,7 @@ nav {
 .bg-name-module {
   color: #cf0000;
   text-transform: uppercase;
+  /* tất cả chữ trong văn bản thành chữ hoa */
   font-size: 1.5rem; }
 
 .box-wrapper-slide .bx-wrapper {
@@ -288,6 +294,7 @@ nav {
     float: left; }
     .item-news-home .item-img .item-info {
       float: right;
+      /* đưa các dòng đẩy sang phải */
       width: 480px; }
       .item-news-home .item-img .item-info h2 {
         font-size: 1.4rem;
