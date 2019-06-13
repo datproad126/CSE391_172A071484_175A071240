@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Register</title>
+  <title>Login</title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   <!-- Bootstrap core CSS -->
@@ -29,56 +29,56 @@
           <div class="row mt-5">
             <div class="col-md-6 offset-md-3">
               <!--Form-->
-              <div class="card wow fadeInRight" data-wow-delay="0.3s">
-                <div class="card-body">
-                  <!--Header-->
-                  <div class="text-center">
-                    <h3 class="white-text">
-                      <!-- <i class="fas fa-user white-text"></i> -->
-                      Đăng nhập</h3>
-                    <hr class="hr-light">
-                  </div>
-                  <!--Body-->
-                  <div class="md-form">
-                    <i class="fas fa-user prefix white-text" title="Enter your name"></i>
-                    <input type="text" id="user" class="white-text form-control">
-                    <label for="user" class="active">Tên đăng nhập</label>
-                  </div>
-                  <div class="md-form">
-                    <i class="fas fa-lock prefix white-text"
-                      title="Enter a user name. It must be at least five characters long and is must be an alphanumeric value."></i>
-                    <input type="password" id="pswd" class="white-text form-control">
-                    <label for="pswd" class="active">Mật khẩu</label>
-                  </div>
-                  <div class="md-form">
-                    <!-- Default unchecked -->
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
-                      <label class="custom-control-label" for="defaultUnchecked"><a href="">Nhớ mật khẩu</a>
-                      </label>
+              <form method="post" id="formLogin" action="/project/php/checklogin.php">
+                <div class="card wow fadeInRight" data-wow-delay="0.3s">
+                  <div class="card-body">
+                    <!--Header-->
+                    <div class="text-center">
+                      <h3 class="white-text">
+                        Đăng nhập</h3>
+                      <hr class="hr-light">
                     </div>
-                  </div>
-                  <div class="md-form">
-                    <a class="text-left white-text" href="#">Quên mật khẩu ?</a>
-                    <a class="text-right white-text" href="#">Tạo tài khoản</a>
-                  </div>
+                    <!--Body-->
+                    <div class="md-form">
+                      <i class="fas fa-user prefix white-text" title="Enter user name"></i>
+                      <input type="text" id="username" name="username" class="white-text form-control">
+                      <label for="username" class="active">Tên đăng nhập</label>
+                    </div>
+                    <div class="md-form">
+                      <i class="fas fa-lock prefix white-text"
+                        title="Enter a user name. It must be at least five characters long and is must be an alphanumeric value."></i>
+                      <input type="password" id="password" name="password" class="white-text form-control">
+                      <label for="password" class="active">Mật khẩu</label>
+                    </div>
+                    <div class="md-form">
+                      <!-- Default unchecked -->
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
+                        <label class="custom-control-label" for="defaultUnchecked"><a href="">Nhớ mật khẩu</a>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="md-form">
+                      <a class="text-right white-text" href="./register.html">Tạo tài khoản</a>
+                    </div>
 
-                  <div class="text-center mt-4">
-                    <button class="btn btn-outline-white waves-effect">Đăng nhập</button>
-                    <hr class="hr-light mb-3 mt-4">
-                    <p class="font-small white-text text-right d-flex justify-content-center mb-3 pt-2"> Đăng nhập bằng:
-                    </p>
-                    <div class="inline-ul text-center">
-                      <button type="button" class="btn btn-primary btn-rounded mr-md-3 z-depth-1a"><i
-                          class="fab fa-facebook-f white-text text-center"></i> Facebook</button>
-                      <!--Google +-->
-                      <button type="button" class="btn btn-danger btn-rounded z-depth-1a"><i
-                          class="fab fa-google-plus-g white-text"></i> Google</button>
+                    <div class="text-center mt-4">
+                      <button type="submit" class="btn btn-outline-white waves-effect" id="btnLogin">Đăng nhập</button>
+                      <hr class="hr-light mb-3 mt-4">
+                      <p class="font-small white-text text-right d-flex justify-content-center mb-3 pt-2"> Đăng nhập
+                        bằng:
+                      </p>
+                      <div class="inline-ul text-center">
+                        <button type="button" class="btn btn-primary btn-rounded mr-md-3 z-depth-1a"><i
+                            class="fab fa-facebook-f white-text text-center"></i> Facebook</button>
+                        <!--Google +-->
+                        <button type="button" class="btn btn-danger btn-rounded z-depth-1a"><i
+                            class="fab fa-google-plus-g white-text"></i> Google</button>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-
+              </form>
               <!--/.Form-->
             </div>
             <!--Grid column-->
@@ -100,7 +100,15 @@
   <script type="text/javascript" src="../MDB-Free_4.8.1/js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="../MDB-Free_4.8.1/js/mdb.min.js"></script>
+  <script type="text/javascript"
+    src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+  <script type="text/javascript" src="../js/login.js"></script>
 </body>
 
 
 </html>
+<?php
+
+// echo "Connected successfully";
+mysqli_close($conn);
+?>

@@ -50,7 +50,7 @@ header,
 }
 
 .card {
-  background-color: rgba(126, 123, 215, 0.2);
+  background-color: rgba(126, 123, 215, 0.7);
 }
 
 .md-form label {
@@ -83,6 +83,12 @@ h6 {
   -webkit-box-shadow: 0 5px 11px 0 rgba(85, 182, 255, 0.28), 0 4px 15px 0 rgba(36, 133, 255, 0.15);
   box-shadow: 0 5px 11px 0 rgba(85, 182, 255, 0.28), 0 4px 15px 0 rgba(36, 133, 255, 0.15);
 }
-/* .btn-rounded {
+label {
+  display: inline-block;
+}
 
-} */
+label.error {
+  display: inline-block;
+  color: red;
+  margin-top: 30px;
+}
